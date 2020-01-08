@@ -1,0 +1,17 @@
+{
+  "name":"meu teste mvc",
+  "authors":[
+    {
+      "name":"Juliano Paulo",
+      "email":"julianopaulo.santos@hotmail.com"
+    }
+  ],
+  "autoload":{
+    "psr-4":{
+      "Sts\\":"App/Sts",
+      "Core\\": "Core"
+
+    }
+  }
+
+}

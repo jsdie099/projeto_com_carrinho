@@ -1,0 +1,181 @@
+body
+{
+    font-family: 'Times New Roman';
+}
+h1,h2,h3,h4,h5
+{
+    color: whitesmoke;
+}
+
+.wrapper a
+{
+    color: yellow;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.wrapper a:hover
+{
+    color: orange;
+}
+.wrapper label
+{
+    color: white;
+    font-size: 25px;
+    line-height: 40px;
+    font-weight: 300;
+}
+.wrapper input
+{
+    background-color: #FFF;
+    border-radius: 10px;
+    padding: 4px 24px;
+    font-size: 18px;
+    margin: 0 15px;
+    text-align: center;
+    color: black;
+
+}
+.wrapper input[type=text]
+{
+    border-radius: 10px;
+    padding: 4px 24px;
+}
+.wrapper input[type=submit]
+{
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 25px;
+    background-color: transparent;
+    text-transform: uppercase;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-bottom: 30px;
+
+}
+.wrapper input[type=submit]:hover
+{
+    background-color: orange;
+}
+
+.bloco
+{
+    width: 100%;
+    float: left;
+}
+
+#esquerda
+{
+    float: left;
+    width: 50%;
+}
+#direita
+{
+    float: right;
+    width: 50%;
+}
+
+#palco
+{
+    color: white;
+}
+#cartao
+{
+    margin-right: 40%;
+}
+#dinheiro
+{
+    margin-left: 40%;
+}
+#texto_cliente
+{
+    margin-top: 100px;
+}
+@media screen and (max-width: 768px){
+    #dinheiro
+    {
+        margin-left: 0;
+    }
+    #cartao
+    {
+        margin-right: 0;
+    }
+
+}
+@media screen and (max-width: 425px)
+{
+
+    .bloco{
+        margin-left: 20%;
+    }
+    #esquerda
+    {
+        float: none;
+    }
+    #direita
+    {
+        float: none;
+    }
+    #dinheiro
+    {
+        margin: 0;
+        padding: 0;
+    }
+
+    #texto_cliente
+    {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 375px)
+{
+
+
+    .wrapper label
+    {
+        font-size: 17px;
+    }
+    .wrapper input
+    {
+        border-radius: 10px;
+        padding: 1px 10px;
+        font-size: 13px;
+        -webkit-border-radius:;
+        -moz-border-radius:;
+        -ms-border-radius:;
+        -o-border-radius:;
+    }
+    .wrapper input[type=submit]
+    {
+        font-size:20px;
+    }
+    .wrapper input[type=email]
+    {
+        border-radius: 10px;
+        padding: 4px 25px;
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 320px)
+{
+    .bloco{
+        margin-left: 10%;
+    }
+
+    .wrapper input
+    {
+        border-radius: 10px;
+        padding: 1px 10px;
+        font-size: 13px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+    .wrapper input[type=submit]
+    {
+        font-size:15px;
+    }
+}

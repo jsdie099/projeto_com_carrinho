@@ -1,0 +1,164 @@
+body
+{
+    font-family: 'Times New Roman';
+    font-weight: 700;
+}
+h1,h2,h3,h4,h5
+{
+    color: whitesmoke;
+}
+
+.wrapper a
+{
+    color: yellow;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.wrapper a:hover
+{
+    color: orange;
+}
+.wrapper label
+{
+    color: white;
+    font-size: 25px;
+    line-height: 40px;
+    font-weight: 300;
+}
+.wrapper input
+{
+    background-color: #FFF;
+    border-radius: 10px;
+    padding: 4px 24px;
+    font-size: 18px;
+    margin: 0 15px;
+    text-align: center;
+    color: black;
+
+}
+.wrapper input[type=text]
+{
+    border-radius: 10px;
+    padding: 4px 24px;
+}
+.wrapper input[type=submit]
+{
+    margin-top: 50px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 25px;
+    background-color: transparent;
+    text-transform: uppercase;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-bottom: 30px;
+
+}
+.wrapper input[type=submit]:hover
+{
+    background-color: orange;
+}
+select
+{
+    color: black;
+    margin-bottom: 0;
+    border-radius: 4px;
+    padding: 0 10px 15px 20px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+@media screen and (max-width: 768px){
+    .wrapper input[type=submit]
+    {
+        margin-top: 50px;
+    }
+
+}
+@media screen and (max-width: 425px)
+{
+    h3
+    {
+        font-size: 20px;
+    }
+    .wrapper input[type=submit]
+    {
+        margin-top: 40px;
+    }
+  
+}
+@media screen and (max-width: 375px)
+{
+    h3
+    {
+        font-size: 20px;
+    }
+    #table_hist h3
+    {
+        font-size:10px;
+    }
+    .wrapper label
+    {
+        font-size: 17px;
+    }
+    .wrapper input
+    {
+        border-radius: 10px;
+        padding: 1px 10px;
+        font-size: 13px;
+        -webkit-border-radius:;
+        -moz-border-radius:;
+        -ms-border-radius:;
+        -o-border-radius:;
+    }
+    .wrapper input[type=submit]
+    {
+        font-size:20px;
+    }
+    .wrapper input[type=email]
+    {
+        border-radius: 10px;
+        padding: 4px 25px;
+        font-size: 13px;
+    }
+    .wrapper input[type=submit]
+    {
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width: 320px)
+{
+    
+    h3
+    {
+        font-size: 20px;
+    }
+    select
+    {
+        padding:0 1px 10px 10;
+        font-size:15px;
+    }
+    .wrapper input[type=text]
+    {
+        padding: 3px 10px 2px 2px;
+    }
+    .wrapper input
+    {
+        border-radius: 10px;
+        padding: 1px 6px;
+        font-size: 13px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+    .wrapper input[type=submit]
+    {
+        font-size:15px;
+        margin-top: 30px;
+    }
+}
