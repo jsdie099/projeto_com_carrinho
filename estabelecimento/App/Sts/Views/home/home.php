@@ -2,7 +2,7 @@
     <script type="text/javascript">
         $(document).ready(function() {
             $('#cpf').mask('000.000.000-00');
-           
+            document.getElementById("cpf").autocomplete = 'on';
         })
     </script>
 <div class="wrapper text-center">

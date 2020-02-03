@@ -5,6 +5,9 @@
         $('#cpf').mask('000.000.000-00');
         $('#celular').mask('(00)0 0000-0000');
         $('#cep').mask('00000-000');
+        document.getElementById("cpf").autocomplete = 'on';
+        document.getElementById("celular").autocomplete = 'on';
+        document.getElementById("cep").autocomplete = 'on';
     })
 </script>
 <div class="wrapper container text-center" style="margin-bottom: 50px;">
