@@ -60,23 +60,6 @@ h1,h2,h3,h4,h5
     background-color: orange;
 }
 
-.bloco
-{
-    width: 100%;
-    float: left;
-}
-
-#esquerda
-{
-    float: left;
-    width: 50%;
-}
-#direita
-{
-    float: right;
-    width: 50%;
-}
-
 #palco
 {
     color: white;
@@ -107,17 +90,7 @@ h1,h2,h3,h4,h5
 @media screen and (max-width: 425px)
 {
 
-    .bloco{
-        margin-left: 20%;
-    }
-    #esquerda
-    {
-        float: none;
-    }
-    #direita
-    {
-        float: none;
-    }
+
     #dinheiro
     {
         margin: 0;
@@ -160,9 +133,7 @@ h1,h2,h3,h4,h5
 }
 @media screen and (max-width: 320px)
 {
-    .bloco{
-        margin-left: 10%;
-    }
+
 
     .wrapper input
     {

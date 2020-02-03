@@ -7,6 +7,11 @@ if(count($_POST['preco_alimento'])<=1)
     sort($_POST['quantidade']);
     $preco_alimento = (double)$_POST['preco_alimento'][0];
     $quantidade = (int)$_POST['quantidade'][0];
+    if($quantidade<=0)
+    {
+        header('location:carrinho');
+        $_SESSION['erro'] = 1;
+    }
     $preco_total = $preco_alimento*$quantidade;
     ?>
     <input type="hidden" name="preco_alimento" value="<?=key($_POST['preco_alimento'])?>">
@@ -39,6 +44,11 @@ $_SESSION['preco_final']=$preco_total;
               if(count($_POST['descricao'])>1)
               {
                   foreach ($_POST['quantidade'] as $id=>$qtd):
+                      if($qtd<=0)
+                      {
+                          header('location:carrinho');
+                          $_SESSION['erro'] = 1;
+                      }
                       $quantidade[] = (int)$qtd;
                   endforeach;
                   foreach ($_POST['descricao'] as $id=>$descricao):

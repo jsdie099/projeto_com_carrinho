@@ -119,19 +119,24 @@ else
 if(count($_SESSION['carrinho'])>0)
 {
 
-
 ?>
                 <tr>
                     <td colspan="2"><h2>Total</h2></td>
                     <td><h3>R$<?=number_format($total,'2',',','.')?></h3></td>
                 </tr>
         </table>
-
         <input type="submit" formaction="?acao=up" value="Atualizar Carrinho">
-        <input type="submit" formaction="pedido" value="Finalizar">
+        <input type="submit" formaction="pedido" value="Finalizar" id="finalizacao">
         <h3><a href="cardapio">Continuar comprando</a></h3>
         </form>
     </div>
 </div>
 <?php
 }
+if(!empty($_SESSION['erro']))
+{
+    echo "<script>alert('Digite uma quantidade válida do alimento!')</script>";
+    unset($_SESSION['erro']);
+}
+?>
+
