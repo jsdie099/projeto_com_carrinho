@@ -48,7 +48,8 @@ foreach ($this->Dados as $dados):
                 <div class="col-md-1"></div>
             </div>
 
-            <input type="submit" value="Enviar">
+            <input type="submit" value="Enviar" id="btn">
+
             <?php
             if(isset($_SESSION['sucesso']))
             {
@@ -61,7 +62,9 @@ foreach ($this->Dados as $dados):
             }
             ?>
         </form>
+        <div id="erro"></div>
     </div>
+    <script src="assets/js/validacaoCpf.js"></script>
 <?php
 endforeach;
 ?>
